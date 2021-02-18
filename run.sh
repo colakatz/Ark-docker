@@ -42,7 +42,7 @@ cp /home/steam/crontab /ark/template/crontab
 
 
 
-if [ ! -d /ark/server  ] || [ ! -f /ark/server/arkversion ];then 
+if [ ! -d /ark/server  ] || [ ! -f /ark/server/ShooterGame/Binaries/Linux/ShooterGameServer ];then 
 	echo "No game files found. Installing..."
 	mkdir -p /ark/server/ShooterGame/Saved/SavedArks
 	mkdir -p /ark/server/ShooterGame/Content/Mods
@@ -77,7 +77,7 @@ UPDATEONSTART=$UPDATEONSTART
 BACKUPONSTOP=$BACKUPONSTOP
 WARNONSTOP=$WARNONSTOP
 TZ=$TZ
-NBPLAYER=$NBPLAYER
+NBPLAYERS=$NBPLAYERS
 UID=$UID
 GID=$GID
 EOF
